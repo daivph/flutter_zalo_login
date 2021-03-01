@@ -115,7 +115,7 @@ public class FlutterZaloLoginPlugin implements FlutterPlugin, MethodCallHandler,
                     _result.success(result);
                 }
             };
-            _mSDk.authenticate(_activity, LoginVia.APP_OR_WEB, listener);
+            _mSDk.authenticate(_activity, LoginVia.WEB, listener);
         } else if (call.method.equals("isAuthenticated")) {
             _mSDk.isAuthenticate(new ValidateOAuthCodeCallback() {
                 @Override

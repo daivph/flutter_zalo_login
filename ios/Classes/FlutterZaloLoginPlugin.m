@@ -41,7 +41,7 @@
         UIViewController *rootViewController =
                 [UIApplication sharedApplication].delegate.window.rootViewController;
 
-        [[ZaloSDK sharedInstance] authenticateZaloWithAuthenType:ZAZAloSDKAuthenTypeViaZaloAppAndWebView
+        [[ZaloSDK sharedInstance] authenticateZaloWithAuthenType:ZAZaloSDKAuthenTypeViaWebViewOnly
                                   parentController:rootViewController
                                   handler:^(ZOOauthResponseObject *response) {
                                     if ([response isSucess]) {
